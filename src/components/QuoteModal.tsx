@@ -41,15 +41,12 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
       
       const response = await fetch('/', {
         method: 'POST',
-        body: formData
-      });
+	headers: { 
+	'Content-Type': 'application/x-www-form-urlencoded',
+	  },
+	body: new URLSearchParams(formData as any).toString(),
+	});
 
-      if (!response.ok) {
-        throw new Error('Form submission failed');
-      }
-      
-      setSubmitStatus('success');
-      
       // Reset form after successful submission
       setTimeout(() => {
         const newFormData = {
