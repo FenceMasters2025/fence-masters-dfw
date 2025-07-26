@@ -164,9 +164,8 @@ const Contact = () => {
  		    {[...Array(5)].map((_, i) => (
     			<Star
       			key={i}
-      		   className={`w-4 h-4 ${
-                    i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'
- 		     }`}
+      		   className={`w-4 h-4 ${i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'}`}
+
   		  />
 		  ))}
 		</div>
