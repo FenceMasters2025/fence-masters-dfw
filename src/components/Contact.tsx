@@ -160,7 +160,7 @@ const Contact = () => {
                     className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors
                   >
 		   <Star className="w-5 h-5 mr-2" />
-		    Customer Satisfaction - 4.9 ⭐⭐⭐⭐⭐
+		    <span>Customer Satisfaction - 4.9 ⭐⭐⭐⭐⭐</span>
 			</a>
                     
                   </a>
