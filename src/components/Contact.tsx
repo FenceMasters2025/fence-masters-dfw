@@ -61,23 +61,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Calendly Integration Placeholder */}
-            <div className="bg-orange-50 p-6 rounded-lg border-2 border-orange-200">
-              <h4 className="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                <Calendar className="w-5 h-5 text-orange-600 mr-2" />
-                Schedule Online
-              </h4>
-              <p className="text-gray-600 mb-4">Book your free estimate appointment online</p>
-              
-              {/* Calendly Integration Placeholder */}
-<div className="bg-white rounded border border-orange-200 overflow-hidden mb-4 h-80 flex items-center justify-center">
-  <p className="text-center text-gray-500 p-4">
-    Calendly scheduling widget will load here
-  </p>
-</div>
-
-              
+  
               {/* Fallback Button */}
               <div className="text-center">
                 <a 
@@ -109,6 +93,37 @@ const Contact = () => {
                   >
                     Get Your Free Estimate Now
                   </button>
+
+		<div className="space-y-4 mb-8">
+  <button
+    onClick={() => setIsQuoteModalOpen(true)}
+    className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+  >
+    Get Your Free Estimate Now
+  </button>
+
+  
+  <a
+    href="https://calendly.com/fencemastersdfw-info/new-meeting"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+  >
+    <Calendar className="w-5 h-5 mr-2" />
+    Schedule Appointment Online
+  </a>
+
+  <div className="text-center">
+    <p className="text-gray-600 mb-2">Prefer to talk? Call us directly:</p>
+    <a
+      href="tel:214-493-3438"
+      className="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors"
+    >
+      (214) 493-3438
+    </a>
+  </div>
+</div>
+
                   
                   <div className="text-center">
                     <p className="text-gray-600 mb-2">Prefer to talk? Call us directly:</p>
