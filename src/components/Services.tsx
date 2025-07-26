@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Home, Shield, Wrench, Truck } from 'lucide-react';
 import QuoteModal from './QuoteModal';
 
@@ -97,9 +98,12 @@ const Services = () => {
                 <p className="text-gray-600 mb-4">{fence.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-blue-600 font-semibold">{fence.price}</span>
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
-                    Learn More
-                  </button>
+                  <Link
+  			to="/contact"
+  			className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors inline-block text-center"
+			>
+  			Learn More
+			</Link>
                 </div>
               </div>
             </div>
