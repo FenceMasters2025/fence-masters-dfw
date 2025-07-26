@@ -159,13 +159,13 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors
                   >
-		    <span className="sr-only">Customer Satisfaction - 4.9</span>
+		    <span className="mr-2">Customer Satisfaction - 4.9</span>
 		    <div className="flex items-center">
- 		    {[...Array(5)].map((_, i) => (
-    			<Star
+		     		    {[...Array(5)].map((_, i) => (
+				    	<Star
       			key={i}
       		   className={`w-4 h-4 ${i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'}`}
-
+		   
   		  />
 		  ))}
 		</div>
