@@ -70,15 +70,13 @@ const Contact = () => {
               </h4>
               <p className="text-gray-600 mb-4">Book your free estimate appointment online</p>
               
-              {/* Calendly Widget Container */}
-              <div className="bg-white rounded border border-orange-200 overflow-hidden mb-4">
-                <div 
-                  className="calendly-inline-widget" 
-                  data-url="https://calendly.com/fencemastersdfw-info/new-meeting" 
-                  style={{minWidth: '320px', height: '750px'}}>
-		<p className="text-center text-gray-500 p-4">Loading our scheduling tool...</p>
-                ></div>
-              </div>
+              {/* Calendly Integration Placeholder */}
+<div className="bg-white rounded border border-orange-200 overflow-hidden mb-4 h-80 flex items-center justify-center">
+  <p className="text-center text-gray-500 p-4">
+    Calendly scheduling widget will load here
+  </p>
+</div>
+
               
               {/* Fallback Button */}
               <div className="text-center">
