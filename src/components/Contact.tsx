@@ -157,25 +157,17 @@ const Contact = () => {
                     href="https://www.google.com/search?q=Fence+Masters+DFW&rlz=1C1CHBF_enUS1234US1234&oq=Fence+Masters+DFW&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEINDc2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x864c19f77192b5ed:0x123456789abcdef0,1,,,"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors
                   >
-                    <span className="mr-2">Customer Satisfaction - 4.9</span>
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`w-4 h-4 ${
-                            i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'
-                          }`}
-                        />
-                      ))}
-                    </div>
+		   <Star className="w-5 h-5 mr-2" />
+		    Customer Satisfaction - 4.9 ⭐⭐⭐⭐⭐
+			</a>
+                    
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
         {/* Service Areas */}
         <div className="mt-16 bg-gray-50 p-8 rounded-lg">
@@ -193,6 +185,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+     </div>
     </section>
       
       <QuoteModal 
