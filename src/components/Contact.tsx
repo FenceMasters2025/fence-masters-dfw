@@ -76,7 +76,6 @@ const Contact = () => {
                   className="calendly-inline-widget" 
                   data-url="https://calendly.com/fencemastersdfw-info/new-meeting" 
                   style={{minWidth: '320px', height: '750px'}}
-		>
 		<p className="text-center text-gray-500 p-4">Loading our scheduling tool...</p>
                 ></div>
               </div>
