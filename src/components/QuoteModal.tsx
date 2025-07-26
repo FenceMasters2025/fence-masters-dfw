@@ -103,7 +103,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
             <form 
               name="quote-request"
               method="POST"
-	      action="/"
+	      action="/contact"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} 
@@ -205,7 +205,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                     <option value="Wood Fence">Wood Fence</option>
                     <option value="Ornamental Steel Fence">Ornamental Steel Fence</option>
                     <option value="Privacy Fence">Privacy Fence</option>
-                    <option value="Pool Fence">Pool Fence</option>
+		    <option value="Pool Fence">Privacy Fence</option>	
                     <option value="Fence Repair">Fence Repair</option>
                     <option value="Not Sure">Not Sure</option>
                   </select>
