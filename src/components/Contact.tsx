@@ -154,10 +154,10 @@ const Contact = () => {
                 {/* Customer Satisfaction Button */}
                 <div className="mt-6">
                   <a
-                    href="https://www.google.com/search?q=Fence+Masters+DFW&rlz=1C1CHBF_enUS1234US1234&oq=Fence+Masters+DFW&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEINDc2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x864c19f77192b5ed:0x123456789abcdef0,1,,,"
+                    href="https://www.google.com/search?q=Fence+Masters"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors
+		    className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors"
                   >
 		    <span className="mr-2">Customer Satisfaction - 4.9</span>
 		    <div className="flex items-center">
@@ -165,7 +165,6 @@ const Contact = () => {
 				    	<Star
       			key={i}
       		   className={`w-4 h-4 ${i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'}`}
-		   
   		  />
 		  ))}
 		</div>
