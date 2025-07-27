@@ -19,6 +19,18 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info */}
             <div className="space-y-6">
+              {/* Moved & relabeled orange button */}
+              <div className="text-center">
+                <a
+                  href="https://calendly.com/fencemastersdfw-info/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors mb-4"
+                >
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Book Appt On Our Calendar
+                </a>
+              </div>
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
                 <div className="space-y-4">
@@ -34,7 +46,6 @@ const Contact = () => {
                       <p className="text-sm text-gray-600">Call for immediate assistance</p>
                     </div>
                   </div>
-
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-blue-600 mr-3" />
                     <div>
@@ -42,7 +53,6 @@ const Contact = () => {
                       <p className="text-sm text-gray-600">Email for quotes and questions</p>
                     </div>
                   </div>
-
                   <div className="flex items-center">
                     <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                     <div>
@@ -50,7 +60,6 @@ const Contact = () => {
                       <p className="text-sm text-gray-600">Serving all DFW communities</p>
                     </div>
                   </div>
-
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-blue-600 mr-3" />
                     <div>
@@ -59,19 +68,6 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Fallback Button */}
-              <div className="text-center">
-                <a
-                  href="https://calendly.com/fencemastersdfw-info/new-meeting"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Schedule Appointment
-                </a>
               </div>
             </div>
 
@@ -83,7 +79,6 @@ const Contact = () => {
                   <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                     Get your detailed free estimate in just a few clicks. Our comprehensive quote form ensures we have all the information needed to provide you with an accurate estimate for your fencing project.
                   </p>
-
                   <div className="space-y-4 mb-8">
                     <button
                       onClick={() => setIsQuoteModalOpen(true)}
@@ -91,15 +86,7 @@ const Contact = () => {
                     >
                       Get Your Free Estimate Now
                     </button>
-                    <a
-                      href="https://calendly.com/fencemastersdfw-info/new-meeting"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                    >
-                      <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Appointment Online
-                    </a>
+                    {/* Blue button removed */}
                     <div className="text-center">
                       <p className="text-gray-600 mb-2">Prefer to talk? Call us directly:</p>
                       <a
@@ -110,7 +97,6 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
-
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-600">
                     <div className="flex items-center justify-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
@@ -125,7 +111,6 @@ const Contact = () => {
                       Licensed & insured
                     </div>
                   </div>
-
                   {/* Customer Satisfaction Button */}
                   <div className="mt-6">
                     <a
@@ -167,13 +152,13 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      <QuoteModal 
-        isOpen={isQuoteModalOpen} 
-        onClose={() => setIsQuoteModalOpen(false)} 
+      <QuoteModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
       />
     </>
   );
 };
 
 export default Contact;
+
