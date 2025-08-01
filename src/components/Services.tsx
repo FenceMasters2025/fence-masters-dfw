@@ -36,7 +36,7 @@ const Services = () => {
     },
     {
       name: "Privacy Fencing",
-      image: "/07Rev-Euless Fence2.jpg",
+      image: "/07Rev-Euless Fence.jpg",
       description: "Complete privacy with style options",
       price: "Starting at $41/ft"
     },
