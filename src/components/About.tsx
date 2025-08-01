@@ -4,9 +4,9 @@ import { Users, Award, Clock, MapPin, Star } from 'lucide-react';
 const About = () => {
   const stats = [
     { icon: <Users className="w-8 h-8" />, number: "1,000+", label: "Happy Customers" },
-    { icon: <Award className="w-8 h-8" />, number: "15+", label: "Years Experience" },
-    { icon: <Clock className="w-8 h-8" />, number: "48hr", label: "Response Time" },
-    { icon: <MapPin className="w-8 h-8" />, number: "50+", label: "Cities Served" }
+    { icon: <Award className="w-8 h-8" />, number: "13+", label: "Years Experience" },
+    { icon: <Clock className="w-8 h-8" />, number: "24hr", label: "Response Time" },
+    { icon: <MapPin className="w-8 h-8" />, number: "20+", label: "Cities Served" }
   ];
 
   return (
