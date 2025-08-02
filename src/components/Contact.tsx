@@ -140,9 +140,9 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Service Areas</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
               {[
-                'Dallas', 'Fort Worth', 'Plano', 'Frisco', 'McKinney', 'Allen',
-                'Arlington', 'Grand Prairie', 'Irving', 'Garland', 'Mesquite', 'Carrollton',
-                'Richardson', 'Lewisville', 'Flower Mound', 'Grapevine', 'Euless', 'Bedford'
+                'Dallas', 'Fort Worth', 'Plano', 'Frisco', 'McKinney', 'Allen', 'Hurst', 'Mansfield', 'Farmers Branch',
+                'Arlington', 'Grand Prairie', 'Irving', 'Garland', 'Mesquite', 'Garland', 'Carrollton', 'North Richland Hills',
+                'Richardson', 'Lewisville', 'Flower Mound', 'Grapevine', 'Euless', 'Bedford', '
               ].map((city, index) => (
                 <div key={index} className="text-gray-600 hover:text-blue-600 transition-colors">
                   {city}
