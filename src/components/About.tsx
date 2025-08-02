@@ -35,27 +35,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Customer Satisfaction Button */}
-            <div className="mt-6">
-              <a
-                href="https://www.google.com/search?q=Fence+Masters+DFW&rlz=1C1CHBF_enUS1234US1234&oq=Fence+Masters+DFW&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEINDc2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x864c19f77192b5ed:0x123456789abcdef0,1,,,"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <span className="mr-2">Customer Satisfaction - 4.9</span>
-                <div className="flex items-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`w-4 h-4 ${
-                        i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </a>
-            </div>
+            
           </div>
 
           <div className="space-y-6">
@@ -82,6 +62,28 @@ const About = () => {
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
                   <span className="text-gray-600">7-year warranty on all installations</span>
                 </li>
+             {/* Customer Satisfaction Button */}
+            <div className="mt-6">
+              <a
+                href="https://www.google.com/search?q=Fence+Masters+DFW&rlz=1C1CHBF_enUS1234US1234&oq=Fence+Masters+DFW&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEINDc2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x864c19f77192b5ed:0x123456789abcdef0,1,,,"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <span className="mr-2">Customer Satisfaction - 4.9</span>
+                <div className="flex items-center">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`w-4 h-4 ${
+                        i < 4 ? 'text-yellow-200 fill-current' : 'text-yellow-200'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </a>
+            </div>
+              
               </ul>
             </div>
 
