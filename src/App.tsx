@@ -7,13 +7,10 @@ import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
-import ScrollToTop from './components/ScrollToTop';
-
 
 function App() {
   return (
     <Router>
-    <ScrollToTop />
       <div className="min-h-screen">
         <Header />
         <main>

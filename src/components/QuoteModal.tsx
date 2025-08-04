@@ -41,12 +41,15 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
       
       const response = await fetch('/', {
         method: 'POST',
-	headers: { 
-	'Content-Type': 'application/x-www-form-urlencoded',
-	  },
-	body: new URLSearchParams(formData as any).toString(),
-	});
+        body: formData
+      });
 
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+      
+      setSubmitStatus('success');
+      
       // Reset form after successful submission
       setTimeout(() => {
         const newFormData = {
@@ -103,7 +106,6 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
             <form 
               name="quote-request"
               method="POST"
-	      action="/contact"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} 
@@ -205,7 +207,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                     <option value="Wood Fence">Wood Fence</option>
                     <option value="Ornamental Steel Fence">Ornamental Steel Fence</option>
                     <option value="Privacy Fence">Privacy Fence</option>
-		    <option value="Pool Fence">Privacy Fence</option>	
+                    <option value="Pool Fence">Pool Fence</option>
                     <option value="Fence Repair">Fence Repair</option>
                     <option value="Not Sure">Not Sure</option>
                   </select>

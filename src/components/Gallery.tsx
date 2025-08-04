@@ -7,206 +7,206 @@ const Gallery = () => {
   const projects = [
     {
       id: 1,
-      image: "/07Rev-6ft Mod S-B-S No Stain_Dallas.jpg",
+      image: "/2015-10-09 07.36.44 1.jpg",
       title: "Professional Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 2,
-      image: "/07Rev-8ft Mod S.B.S._Plano.jpg",
+      image: "/2015-10-09 07.45.24 1.jpg",
       title: "Quality Fence Construction",
       category: "Wood Fencing",
-      location: "Plano, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 3,
-      image: "/07Rev-Euless Fence.jpg",
+      image: "/2015-10-09 07.59.04 1.jpg",
       title: "Expert Fence Installation",
       category: "Privacy Fencing",
-      location: "Euless, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 4,
-      image: "/07Rev-Cedar Fence_Cedar Hill.jpg",
+      image: "/2015-10-16 12.23.17.jpg",
       title: "Residential Fence Project",
       category: "Wood Fencing",
-      location: "Cedar Hill, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 5,
-      image: "/07Rev-Farmers Branch Fence.jpg",
+      image: "/2016-01-20 14.17.25.jpg",
       title: "Custom Fence Design",
       category: "Wood Fencing",
-      location: "Farmers Branch, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 6,
-      image: "/07Rev-Flower Mound Fence.jpg",
+      image: "/2016-01-23 12.52.37.jpg",
       title: "Professional Installation",
       category: "Wood Fencing",
-      location: "Flower Mound, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 7,
-      image: "/07Rev-Ft Worth Fence.jpg",
+      image: "/2016-01-23 22.11.49-1.jpg",
       title: "Quality Craftsmanship",
       category: "Wood Fencing",
-      location: "Fort Worth, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 8,
-      image: "/07Rev-Garland Fence.jpg",
+      image: "/2016-01-23 22.11.55-1.jpg",
       title: "Detailed Fence Work",
       category: "Wood Fencing",
-      location: "Garland, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 9,
-      image: "/07Rev-Garland Fence2.jpg",
+      image: "/2016-02-22 12.50.08.jpg",
       title: "Fence Installation Project",
       category: "Wood Fencing",
-      location: "Garland, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 10,
-      image: "/07Rev-Grand Prairie Fence.jpg",
+      image: "/2016-04-29 15.56.40-1.jpg",
       title: "Custom Fence Solution",
       category: "Wood Fencing",
-      location: "Grand Prairie, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 11,
-      image: "/07Rev-Grand Prairie Fence2.jpg",
+      image: "/2016-05-06 12.17.57.jpg",
       title: "Expert Fence Construction",
       category: "Wood Fencing",
-      location: "Grand Prairie, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 12,
-      image: "/07Rev-Grapevine Fence.jpg",
+      image: "/2017-02-04 18.14.28-1.jpg",
       title: "Custom Wood Fence Installation",
       category: "Wood Fencing",
-      location: "Grapevine, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 13,
-      image: "/07Rev-Hurst Fence.jpg",
+      image: "/2020-01-15 10.46.36.jpg",
       title: "Modern Fence Installation",
       category: "Wood Fencing",
-      location: "Hurst, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 14,
-      image: "/07Rev-Grapevine Fence2.jpg",
+      image: "/2020-01-24 17.06.15.jpg",
       title: "Professional Fence Project",
       category: "Wood Fencing",
-      location: "Grapevine, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 15,
-      image: "/07Rev-Las Colinas Fence.jpg",
+      image: "/2020-02-07 17.54.10.jpg",
       title: "Quality Fence Installation",
       category: "Wood Fencing",
-      location: "Las Colinas, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 16,
-      image: "/07Rev-Lewisville Fence.jpg",
+      image: "/2020-02-22 12.12.51.jpg",
       title: "Custom Fence Design",
       category: "Wood Fencing",
-      location: "Lewisville, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 17,
-      image: "/07Rev-Mansfield Fence.jpg",
+      image: "/2020-02-29 17.52.02.jpg",
       title: "Expert Fence Construction",
       category: "Wood Fencing",
-      location: "Mansfield, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 18,
-      image: "/07Rev-Mansfield Fence2.jpg",
+      image: "/2020-03-02 10.13.33.jpg",
       title: "Residential Fence Installation",
       category: "Wood Fencing",
-      location: "Mansfield, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 19,
-      image: "/07Rev-Mesquite Fence.jpg",
+      image: "/2020-03-02 14.54.27.jpg",
       title: "Professional Fence Work",
       category: "Wood Fencing",
-      location: "Mesquite, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 20,
-      image: "/07Rev-Modern Design_Dallas.jpg",
+      image: "/2020-03-06 11.24.19.jpg",
       title: "Quality Fence Project",
       category: "Wood Fencing",
-      location: "Dallas, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 21,
-      image: "/07Rev-Wood Fencing_Irving.jpg",
+      image: "/2020-03-28 11.39.46.jpg",
       title: "Custom Fence Installation",
       category: "Wood Fencing",
-      location: "Irving, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 22,
-      image: "/07Rev-Privacy Fence_Bedford.jpg",
+      image: "/2020-03-28 11.39.52.jpg",
       title: "Expert Fence Design",
       category: "Wood Fencing",
-      location: "Bedford, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 23,
-      image: "/07Rev-Privacy Fencing_Hurst.jpg",
+      image: "/2020-03-28 15.20.25.jpg",
       title: "Professional Fence Solution",
       category: "Wood Fencing",
-      location: "Hurst, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 24,
-      image: "/07Rev-Richardson Fence.jpg",
+      image: "/2020-04-25 13.10.51.jpg",
       title: "Quality Fence Construction",
       category: "Wood Fencing",
-      location: "Richardson, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 25,
-      image: "/07Rev-Richardson Fence2.jpg",
+      image: "/6ft Mod B.O.B. Stained.jpg",
       title: "6ft Board-on-Board Stained Fence",
       category: "Wood Fencing",
-      location: "Richardson, TX"
+      location: "Dallas-Fort Worth, TX"
     },
     {
       id: 26,
-      image: "/07Rev-Decorative Fencing.jpg",
+      image: "/Decorative Fencing.jpg",
       title: "Decorative Fence Design",
       category: "Decorative Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 27,
-      image: "/07Rev-Ornamental1_Plano.jpg",
+      image: "/Ornamental Steel Fence.jpg",
       title: "Ornamental Steel Fence",
       category: "Ornamental Steel Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 28,
-      image: "/07Rev-SIde-by-Side.jpg",
+      image: "/Privacy Fencing.jpg",
       title: "Privacy Fence Installation",
       category: "Privacy Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 29,
-      image: "/07Rev-Stained B.O.B_Las Colinas.jpg",
+      image: "/Wood Fencing.jpg",
       title: "Wood Fence Installation",
       category: "Wood Fencing",
-      location: "Irving-Las Colinas, TX"
+      location: "Dallas-Fort Worth, TX"
     }
   ];
 
