@@ -7,6 +7,8 @@ import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
+import EstimatePage from './pages/BallparkEstimatePage';
+
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/ballpark-estimate" element={<EstimatePage />} />
+ 	    <Route path="/ballpark-estimate" element={<EstimatePage />} />
           </Routes>
         </main>
         <Footer />
