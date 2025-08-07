@@ -2,9 +2,9 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import LeadCaptureForm from '../components/LeadCaptureForm';
-import EstimateCalculator from '../components/EstimateCalculator';
+import FenceEstimateCalculator from '../components/FenceEstimateCalculator'; // Updated import
 
-const EstimatePage = () => {
+const BallparkEstimatePage = () => { // Updated component name to match file
   const [showCalculator, setShowCalculator] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const EstimatePage = () => {
   return (
     <div>
       {showCalculator ? (
-        <EstimateCalculator />
+        <FenceEstimateCalculator /> // Updated component usage
       ) : (
         <LeadCaptureForm onSuccess={handleLeadCaptureSuccess} />
       )}
@@ -26,4 +26,4 @@ const EstimatePage = () => {
   );
 };
 
-export default EstimatePage;
+export default BallparkEstimatePage; // Updated export
