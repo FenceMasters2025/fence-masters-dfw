@@ -105,7 +105,7 @@ const Header = () => {
 		      : 'text-gray-700 hover:text-blue-900'
 	        }`}
 	       >
-	       Estimate
+	       Ballpark Estimate
 	     </Link>
               <button 
                 onClick={() => setIsQuoteModalOpen(true)}
@@ -192,7 +192,7 @@ const Header = () => {
    		   : 'text-gray-700 hover:text-blue-900'
   		}`}
 		>
- 		 Estimate
+ 		 Ballpark Estimate
 		</Link>
                 <button 
                   onClick={() => {
