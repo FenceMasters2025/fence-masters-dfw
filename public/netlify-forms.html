@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8"><title>Netlify Form Detection</title></head>
+  <body>
+    <!-- Hidden form purely so Netlify registers it at build time -->
+    <form name="quote-request" data-netlify="true" netlify hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="tel"  name="phone" />
+      <input type="email" name="email" />
+    </form>
+  </body>
+</html>
