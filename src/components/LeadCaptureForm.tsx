@@ -236,13 +236,6 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
             <p className="text-sm text-gray-600">Our team will contact you to discuss your project in detail</p>
           </div>
           
-          <div className="text-center p-4 bg-white rounded-lg shadow">
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Shield className="w-6 h-6 text-orange-600" />
-            </div>
-            <h3 className="font-semibold text-gray-800 mb-2">No Obligation</h3>
-            <p className="text-sm text-gray-600">Free estimate with no pressure or commitment required</p>
-          </div>
         </div>
       </div>
     </section>
