@@ -97,6 +97,16 @@ const Header = () => {
               >
                 Contact
               </Link>
+		<Link 
+		  to="/ballpark-estimate" 
+		  className={`transition-colors ${
+		    isActive('/ballpark-estimate') 
+		      ? 'text-blue-900 font-semibold' 
+		      : 'text-gray-700 hover:text-blue-900'
+	        }`}
+	       >
+	       Estimate
+	     </Link>
               <button 
                 onClick={() => setIsQuoteModalOpen(true)}
                 className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
