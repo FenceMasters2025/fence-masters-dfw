@@ -219,7 +219,7 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
         </div>
 
         {/* Benefits Section */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 justify-center">
           <div className="text-center p-4 bg-white rounded-lg shadow">
             <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
               <ArrowRight className="w-6 h-6 text-green-600" />
