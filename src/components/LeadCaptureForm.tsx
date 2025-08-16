@@ -62,7 +62,7 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
 
   return (
     <>
-      <form name="lead-capture" netlify hidden>
+      <form name="quote-request" netlify hidden>
         <input type="text" name="firstName" />
         <input type="text" name="lastName" />
         <input type="tel" name="phone" />
@@ -93,7 +93,7 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
             </div>
           ) : (
             <form
-              name="lead-capture"
+              name="quote-request"
               method="POST"
               action="/"
               data-netlify="true"
@@ -102,7 +102,7 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
               className="space-y-6"
             >
               {/* Netlify honeypot field for spam protection */}
-              <input type="hidden" name="form-name" value="lead-capture" />
+              <input type="hidden" name="form-name" value="quote-request" />
               <div style={{ display: 'none' }}>
                 <label>
                   Don't fill this out if you're human: <input name="bot-field" />
