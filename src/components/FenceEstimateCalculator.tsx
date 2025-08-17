@@ -308,13 +308,7 @@ const FenceEstimateCalculator = () => {
                         <Phone className="w-4 h-4 mr-2" />
                         Call Now
                       </a>
-                      <a
-                        href="mailto:info@fencemastersdfw.com"
-                        className="flex items-center justify-center border-2 border-blue-600 text-blue-600 py-3 px-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
-                      >
-                        <Mail className="w-4 h-4 mr-2" />
-                        Email Us
-                      </a>
+                      
                     </div>
                   </div>
                 </div>

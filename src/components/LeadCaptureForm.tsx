@@ -33,11 +33,9 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
       const formElement = e.target as HTMLFormElement;
       const formDataToSubmit = new FormData(formElement);
       
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
+      const response = await fetch('https://fencemastersdfw.com/', {  
+	method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded',},
         body: new URLSearchParams(formDataToSubmit as any).toString(),
       });
 
