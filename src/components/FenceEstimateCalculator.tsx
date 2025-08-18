@@ -292,25 +292,22 @@ const FenceEstimateCalculator = () => {
                   </div>
 
                   {/* Call to Action */}
-                  <div className="space-y-4">
-                    <button
-                      onClick={() => setIsQuoteModalOpen(true)}
-                      className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-lg"
-                    >
-                      Get Accurate Quote
-                    </button>
-                    
-                      <a
-                        href="tel:214-493-3438"
-			className="w-full block text-center bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                      >
-                        <Phone className="w-4 h-4 mr-2" />
-                        Call Now
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>
+		<div className="space-y-4">
+		  <button
+    		onClick={() => setIsQuoteModalOpen(true)}
+  		  className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-lg"
+ 		 >
+  		  Get Accurate Quote
+ 		 </button>
+
+ 		 <a
+  		  href="tel:214-493-3438"
+   		 className="w-full block text-center bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+		  >
+  		  <Phone className="w-4 h-4 mr-2 inline-block" />
+  		  Call Now
+  		</a>
+		</div>
               ) : (
                 <div className="text-center py-12">
                   <Calculator className="w-16 h-16 text-gray-300 mx-auto mb-4" />
