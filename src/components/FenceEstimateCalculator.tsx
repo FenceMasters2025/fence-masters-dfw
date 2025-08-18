@@ -300,10 +300,9 @@ const FenceEstimateCalculator = () => {
                       Get Accurate Quote
                     </button>
                     
-                    <div className="grid grid-cols-2 gap-4">
                       <a
                         href="tel:214-493-3438"
-                        className="flex items-center justify-center bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+			className="w-full block text-center bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                       >
                         <Phone className="w-4 h-4 mr-2" />
                         Call Now
