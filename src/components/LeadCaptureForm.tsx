@@ -44,6 +44,10 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onSuccess }) => {
       }
       
       setSubmitStatus('success');
+      localStorage.setItem('leadContact', JSON.stringify(formData));
+      setTimeout(() => {
+      onSuccess();
+      }, 1000);
       
       // Call onSuccess callback after a brief delay
       setTimeout(() => {

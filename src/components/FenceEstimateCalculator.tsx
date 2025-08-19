@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calculator, DollarSign, Info, Phone, Mail } from 'lucide-react';
+import { Calculator, DollarSign, Info, Phone} from 'lucide-react';
 import QuoteModal from './QuoteModal';
 
 interface EstimateData {
@@ -32,6 +32,14 @@ const FenceEstimateCalculator = () => {
   } | null>(null);
 
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  type LeadContact = { firstName: string; lastName: string; phone: string; email: string };
+  const [leadContact, setLeadContact] = useState<LeadContact | null>(null);
+  useEffect(() => {
+  const saved = localStorage.getItem('leadContact');
+  if (saved) {
+    try { setLeadContact(JSON.parse(saved)); } catch {}
+  }
+}, []);
 
   // Pricing structure per linear foot
   const fencePricing = {
@@ -125,10 +133,81 @@ const FenceEstimateCalculator = () => {
       [name]: value
     }));
   };
+const handleAccurateQuote = async () => {
+  // build a human-friendly summary (nice in emails)
+  const projectDetails = [
+    `Fence Type: ${estimateData.fenceType || '-'}`,
+    `Height: ${estimateData.fenceHeight || '-'}`,
+    `Length (LF): ${estimateData.fenceLength || '-'}`,
+    `Gates: ${estimateData.numberOfGates || '-'}`,
+    `Gate Type: ${estimateData.gateType || '-'}`,
+    `Install Complexity: ${estimateData.installationComplexity || '-'}`,
+  ].join(' | ');
+
+  const payload: Record<string, string> = {
+    // MUST match your Netlify form name
+    'form-name': 'quote-request',
+
+    // lead contact (stored by LeadCaptureForm)
+    firstName: leadContact?.firstName ?? '',
+    lastName:  leadContact?.lastName  ?? '',
+    phone:     leadContact?.phone     ?? '',
+    email:     leadContact?.email     ?? '',
+
+    // project details from calculator
+    fenceType:              estimateData.fenceType,
+    fenceHeight:            estimateData.fenceHeight,
+    linearFeet:             estimateData.fenceLength,
+    numberOfGates:          estimateData.numberOfGates,
+    gateType:               estimateData.gateType,
+    installationComplexity: estimateData.installationComplexity,
+
+    // nice extras
+    totalEstimated: estimate ? String(estimate.totalCost) : '',
+    priceRange:     estimate ? `${estimate.priceRange.min} - ${estimate.priceRange.max}` : '',
+    projectDetails,
+    source: 'Ballpark Estimate (website)',
+  };
+
+  try {
+    // use your Netlify primary domain to avoid 404
+    const PRIMARY_ORIGIN = 'https://fencemastersdfw.com';
+    await fetch(`${PRIMARY_ORIGIN}/`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(payload).toString(),
+    });
+
+    // show your existing modal (or success UI)
+    setIsQuoteModalOpen(true);
+  } catch (err) {
+    console.error('Accurate quote submit failed:', err);
+  }
+};
+// --- end lead+project additions ---
 
   return (
     <>
       <section className="py-20 bg-gray-50">
+{/* Netlify field registration (hidden, not submitted on its own) */}
+<form name="quote-request" data-netlify="true" hidden>
+  <input type="text" name="firstName" />
+  <input type="text" name="lastName" />
+  <input type="tel"  name="phone" />
+  <input type="email" name="email" />
+
+  <input type="text" name="fenceType" />
+  <input type="text" name="fenceHeight" />
+  <input type="text" name="linearFeet" />
+  <input type="text" name="numberOfGates" />
+  <input type="text" name="gateType" />
+  <input type="text" name="installationComplexity" />
+
+  <input type="text" name="totalEstimated" />
+  <input type="text" name="priceRange" />
+  <input type="text" name="projectDetails" />
+  <input type="text" name="source" />
+</form>
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Ballpark Estimate</h1>
@@ -294,7 +373,7 @@ const FenceEstimateCalculator = () => {
                   {/* Call to Action */}
 		<div className="space-y-4">
 		  <button
-    		onClick={() => setIsQuoteModalOpen(true)}
+		onClick={handleAccurateQuote}
   		  className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-lg"
  		 >
   		  Get Accurate Quote
