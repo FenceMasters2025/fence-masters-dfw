@@ -1,5 +1,12 @@
+import GalleryImage from "./GalleryImage";
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+
+const toBase = (path: string) =>
+  decodeURIComponent(path.replace(/^\//, "")).replace(/\.(jpe?g|png)$/i, "");
+
+const webp = (base: string, w: 400 | 800 | 1200 | 1600 = 1200) =>
+  `/gallery/${encodeURIComponent(base)}-${w}.webp`;
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -7,206 +14,206 @@ const Gallery = () => {
   const projects = [
     {
       id: 1,
-      image: "/2015-10-09 07.36.44 1.jpg",
+      image: "/07Rev-Wood Fencing_Irving.jpg",
       title: "Professional Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Irving, TX"
     },
     {
       id: 2,
-      image: "/2015-10-09 07.45.24 1.jpg",
+      image: "/07Rev-Side-by-Side.jpg",
       title: "Quality Fence Construction",
       category: "Wood Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 3,
-      image: "/2015-10-09 07.59.04 1.jpg",
+      image: "/07Rev-Richardson Fence2.jpg",
       title: "Expert Fence Installation",
       category: "Privacy Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Richardson, TX"
     },
     {
       id: 4,
-      image: "/2015-10-16 12.23.17.jpg",
+      image: "/07Rev-Privacy Fencing_Hurst.jpg",
       title: "Residential Fence Project",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "HEB-Hurst, TX"
     },
     {
       id: 5,
-      image: "/2016-01-20 14.17.25.jpg",
+      image: "/07Rev-Stained-BOB-Las-Colinas.jpg",
       title: "Custom Fence Design",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Irving - Las Colinas, TX"
     },
     {
       id: 6,
-      image: "/2016-01-23 12.52.37.jpg",
+      image: "/07Rev-Garland Fence.jpg",
       title: "Professional Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Garland, TX"
     },
     {
       id: 7,
-      image: "/2016-01-23 22.11.49-1.jpg",
+      image: "/07Rev-Grand Prairie Fence.jpg",
       title: "Quality Craftsmanship",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Grand Prairie, TX"
     },
     {
       id: 8,
-      image: "/2016-01-23 22.11.55-1.jpg",
+      image: "/07Rev-Euless Fence.jpg",
       title: "Detailed Fence Work",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "HEB - Euless, TX"
     },
     {
       id: 9,
-      image: "/2016-02-22 12.50.08.jpg",
+      image: "/07Rev-6ft Mod S-B-S No Stain_Dallas.jpg",
       title: "Fence Installation Project",
       category: "Wood Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 10,
-      image: "/2016-04-29 15.56.40-1.jpg",
+      image: "/07Rev-8ft Mod S.B.S._Plano.jpg",
       title: "Custom Fence Solution",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Plano, TX"
     },
     {
       id: 11,
-      image: "/2016-05-06 12.17.57.jpg",
+      image: "/07Rev-Cedar Fence_Cedar Hill.jpg",
       title: "Expert Fence Construction",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Cedar Hill, TX"
     },
     {
       id: 12,
-      image: "/2017-02-04 18.14.28-1.jpg",
+      image: "/07Rev-Decorative Fencing.jpg",
       title: "Custom Wood Fence Installation",
       category: "Wood Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 13,
-      image: "/2020-01-15 10.46.36.jpg",
+      image: "/07Rev-Farmers Branch Fence.jpg",
       title: "Modern Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Farmers Branch, TX"
     },
     {
       id: 14,
-      image: "/2020-01-24 17.06.15.jpg",
+      image: "/07Rev-Flower Mound Fence.jpg",
       title: "Professional Fence Project",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Flower Mound, TX"
     },
     {
       id: 15,
-      image: "/2020-02-07 17.54.10.jpg",
+      image: "/07Rev-Ft Worth Fence.jpg",
       title: "Quality Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Fort Worth, TX"
     },
     {
       id: 16,
-      image: "/2020-02-22 12.12.51.jpg",
+      image: "/07Rev-Garland Fence2.jpg",
       title: "Custom Fence Design",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Garland, TX"
     },
     {
       id: 17,
-      image: "/2020-02-29 17.52.02.jpg",
+      image: "/07Rev-Grand Prairie Fence2.jpg",
       title: "Expert Fence Construction",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Grand Prairie, TX"
     },
     {
       id: 18,
-      image: "/2020-03-02 10.13.33.jpg",
+      image: "/07Rev-Grapevine Fence.jpg",
       title: "Residential Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Grapevine, TX"
     },
     {
       id: 19,
-      image: "/2020-03-02 14.54.27.jpg",
+      image: "/07Rev-Grapevine Fence2.jpg",
       title: "Professional Fence Work",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Grapevine, TX"
     },
     {
       id: 20,
-      image: "/2020-03-06 11.24.19.jpg",
+      image: "/07Rev-Hurst Fence.jpg",
       title: "Quality Fence Project",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Hurst, TX"
     },
     {
       id: 21,
-      image: "/2020-03-28 11.39.46.jpg",
+      image: "/07Rev-Las Colinas Fence.jpg",
       title: "Custom Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Irving-Las Colinas, TX"
     },
     {
       id: 22,
-      image: "/2020-03-28 11.39.52.jpg",
+      image: "/07Rev-Lewisville Fence.jpg",
       title: "Expert Fence Design",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Lewisville, TX"
     },
     {
       id: 23,
-      image: "/2020-03-28 15.20.25.jpg",
+      image: "/07Rev-Mansfield Fence.jpg",
       title: "Professional Fence Solution",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Mansfield, TX"
     },
     {
       id: 24,
-      image: "/2020-04-25 13.10.51.jpg",
+      image: "/07Rev-Flower Mound Fence.jpg",
       title: "Quality Fence Construction",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Flower Mound, TX"
     },
     {
       id: 25,
-      image: "/6ft Mod B.O.B. Stained.jpg",
-      title: "6ft Board-on-Board Stained Fence",
+      image: "/07Rev-6ft Mod S-B-S No Stain_Dallas.jpg",
+      title: "6ft Side-by-Side Cedar Fence",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Dallas, TX"
     },
     {
       id: 26,
-      image: "/Decorative Fencing.jpg",
+      image: "/07Rev-Decorative Fencing.jpg",
       title: "Decorative Fence Design",
       category: "Decorative Fencing",
       location: "Dallas-Fort Worth, TX"
     },
     {
       id: 27,
-      image: "/Ornamental Steel Fence.jpg",
-      title: "Ornamental Steel Fence",
+      image: "/07Rev-Grapevine Fence.jpg",
+      title: "Awesome Cedar Fence",
       category: "Ornamental Steel Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Grapevine, TX"
     },
     {
       id: 28,
-      image: "/Privacy Fencing.jpg",
+      image: "/07Rev-Privacy Fencing_Hurst.jpg",
       title: "Privacy Fence Installation",
       category: "Privacy Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "HEB-Hurst, TX"
     },
     {
       id: 29,
-      image: "/Wood Fencing.jpg",
+      image: "/07Rev-Wood Fencing_Irving.jpg",
       title: "Wood Fence Installation",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: "Irving, TX"
     }
   ];
 
@@ -241,29 +248,33 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
-              onClick={() => openModal(index)}
-            >
-              <div className="aspect-w-4 aspect-h-3 h-64">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-end">
-                <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="font-semibold mb-1">{project.title}</h3>
-                  <p className="text-sm text-gray-200">{project.category}</p>
-                  <p className="text-xs text-gray-300">{project.location}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+  {projects.map((project, index) => (
+    <div
+      key={project.id}
+      className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+      onClick={() => openModal(index)}
+    >
+      {/* the image */}
+      <GalleryImage
+        name={toBase(project.image)}   // turns "/file.jpg" into "file"
+        eager={index < 4}              // first row loads fast
+        alt={project.title}
+        w={1200}
+        h={800}
+      />
+
+      {/* the hover overlay text */}
+      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-end">
+        <div className="p-4 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="font-semibold mb-1">{project.title}</h3>
+          <p className="text-sm text-gray-200">{project.category}</p>
+          <p className="text-xs text-gray-300">{project.location}</p>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         {/* Modal */}
         {selectedImage !== null && (
@@ -291,9 +302,15 @@ const Gallery = () => {
               </button>
 
               <img
-                src={projects[selectedImage].image}
-                alt={projects[selectedImage].title}
-                className="max-w-full max-h-full object-contain"
+  src={webp(toBase(projects[selectedImage].image), 1600)}
+  srcSet={[
+    `${webp(toBase(projects[selectedImage].image), 800)} 800w`,
+    `${webp(toBase(projects[selectedImage].image), 1200)} 1200w`,
+    `${webp(toBase(projects[selectedImage].image), 1600)} 1600w`,
+  ].join(", ")}
+  sizes="100vw"
+  alt={projects[selectedImage].title}
+  className="max-w-full max-h-full object-contain"
               />
               
               <div className="absolute bottom-4 left-4 text-white">
