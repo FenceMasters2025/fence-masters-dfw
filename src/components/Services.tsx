@@ -35,7 +35,7 @@ const Services = () => {
     },
     {
       name: "Privacy Fencing",
-      image: "/gallery/07Rev-Privacy Fencing_Hurst-800.webp.jpg",
+      image: "/gallery/07Rev-Privacy Fencing_Hurst-800.webp",
       description: "Complete privacy with style options",
       price: "Starting at $41/ft"
     },
