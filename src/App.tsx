@@ -8,36 +8,24 @@ import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 import EstimatePage from './pages/BallparkEstimatePage';
-import PageShell from './components/PageShell';
-
-const ENABLE_LIGHT_BG = true;
 
 function App() {
-  const appBody = (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/ballpark-estimate" element={<EstimatePage />} />
-        </Routes>
-      </main>
-      <Footer />
-
-      {/* Tidio Chat Widget Placeholder */}
-      <div id="tidio-chat" className="fixed bottom-4 right-4 z-50">
-        {/* Tidio script would be inserted here */}
-      </div>
-    </div>
-  );
-
   return (
     <Router>
-      {ENABLE_LIGHT_BG ? <PageShell>{appBody}</PageShell> : appBody}
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/ballpark-estimate" element={<EstimatePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

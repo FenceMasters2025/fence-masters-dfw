@@ -1,12 +1,14 @@
 import React from 'react';
 import Gallery from '../components/Gallery';
+import PageShell from '../components/PageShell';
 
 const GalleryPage = () => {
   return (
-    <div>
+    <PageShell>
       <Gallery />
-    </div>
+    </PageShell>
   );
 };
 
 export default GalleryPage;
+

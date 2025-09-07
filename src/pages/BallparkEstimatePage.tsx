@@ -1,10 +1,9 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LeadCaptureForm from '../components/LeadCaptureForm';
-import FenceEstimateCalculator from '../components/FenceEstimateCalculator'; // Updated import
+import FenceEstimateCalculator from '../components/FenceEstimateCalculator';
+import PageShell from '../components/PageShell';
 
-const BallparkEstimatePage = () => { // Updated component name to match file
+const BallparkEstimatePage = () => {
   const [showCalculator, setShowCalculator] = useState(false);
 
   useEffect(() => {
@@ -16,14 +15,14 @@ const BallparkEstimatePage = () => { // Updated component name to match file
   };
 
   return (
-    <div>
+    <PageShell>
       {showCalculator ? (
-        <FenceEstimateCalculator /> // Updated component usage
+        <FenceEstimateCalculator />
       ) : (
         <LeadCaptureForm onSuccess={handleLeadCaptureSuccess} />
       )}
-    </div>
+    </PageShell>
   );
 };
 
-export default BallparkEstimatePage; // Updated export
+export default BallparkEstimatePage;

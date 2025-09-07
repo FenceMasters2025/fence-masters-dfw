@@ -106,7 +106,7 @@ const Contact = () => {
                 <div className="space-y-4 mb-8">
                   <button 
                     onClick={() => setIsQuoteModalOpen(true)}
-                    className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+		    className="bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors text-lg"
                   >
                     Get Your Free Estimate Now
                   </button>

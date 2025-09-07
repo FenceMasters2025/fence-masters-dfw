@@ -322,7 +322,7 @@ const Gallery = () => {
         )}
 
         <div className="text-center mt-12">
-          <div className="bg-blue-600 text-white px-8 py-3 rounded-lg inline-block">
+	  <div className="bg-gray-800 text-white px-8 py-3 rounded-lg inline-block hover:bg-gray-700 transition-colors">
             Some of Our Recent Projects...
           </div>
         </div>

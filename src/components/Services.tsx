@@ -60,7 +60,7 @@ const Services = () => {
         {/* Service Categories */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
@@ -84,7 +84,7 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {fenceTypes.map((fence, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={fence.image} 
@@ -97,7 +97,7 @@ const Services = () => {
                 <p className="text-gray-600 mb-4">{fence.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-blue-600 font-semibold">{fence.price}</span>
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+		  <button className="bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-900">
                     Learn More
                   </button>
                 </div>
