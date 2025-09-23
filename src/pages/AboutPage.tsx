@@ -1,11 +1,13 @@
-import React from 'react';
-import About from '../components/About';
-import PageShell from '../components/PageShell';
+import React from "react";
+import About from "../components/About";
+import PageShell from "../components/PageShell";
 
 const AboutPage = () => {
   return (
     <PageShell>
-      <About />
+      <div className="min-h-screen">
+        <About />
+      </div>
     </PageShell>
   );
 };

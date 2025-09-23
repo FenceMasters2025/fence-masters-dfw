@@ -1,11 +1,14 @@
-import React from 'react';
-import Hero from '../components/Hero';
+import React from "react";
+import Hero from "../components/Hero";
+import PageShell from "../components/PageShell";
 
 const HomePage = () => {
   return (
-    <div>
-      <Hero />
-    </div>
+    <PageShell>
+      <div className="min-h-screen">
+        <Hero />
+      </div>
+    </PageShell>
   );
 };
 
