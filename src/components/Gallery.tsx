@@ -15,205 +15,234 @@ const Gallery = () => {
     {
       id: 1,
       image: "/07Rev-Wood Fencing_Irving.jpg",
-      title: "Professional Fence Installation",
+      alt:   "custom cedar fence with smooth finish and reinforced posts",
+      title: "Custom cedar wood fence built for lasting privacy",
       category: "Wood Fencing",
-      location: "Irving, TX"
+      location: ""
     },
     {
       id: 2,
       image: "/07Rev-Side-by-Side.jpg",
-      title: "Quality Fence Construction",
+      alt:   "modern styles for a clean design and strong framing",
+      title: "Premium fence with modern, sleek design",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: ""
     },
     {
       id: 3,
       image: "/07Rev-Richardson Fence2.jpg",
-      title: "Expert Fence Installation",
+      alt:   "cedar privacy fence built for long-lasting durability",
+      title: "Detailed craftsmanship on full cedar replacement",
       category: "Privacy Fencing",
-      location: "Richardson, TX"
+      location: ""
     },
     {
       id: 4,
       image: "/07Rev-Privacy Fencing_Hurst.jpg",
-      title: "Residential Fence Project",
+      alt:   "residential backyard fence with natural wood texture",
+      title: "Privacy fence with smooth finish and reinforced posts",
       category: "Wood Fencing",
-      location: "HEB-Hurst, TX"
+      location: ""
     },
     {
       id: 5,
       image: "/07Rev-Stained-BOB-Las-Colinas.jpg",
-      title: "Custom Fence Design",
+      alt:   "stained wood fence showcasing rich grain and smooth panels",
+      title: "Decorative fence for great curb appeal",
       category: "Wood Fencing",
-      location: "Irving - Las Colinas, TX"
+      location: ""
     },
     {
       id: 6,
       image: "/07Rev-Garland Fence.jpg",
-      title: "Professional Installation",
+      alt:   "classic board-on-board fence built for privacy and strength",
+      title: "Quality cedar fence stained for weather resistance",
       category: "Wood Fencing",
-      location: "Garland, TX"
+      location: ""
     },
     {
       id: 7,
       image: "/07Rev-Grand Prairie Fence.jpg",
-      title: "Quality Craftsmanship",
+      alt:   "custom-built fence with detailed craftsmanship and alignment",
+      title: "Board-on-board fence for improved strength and privacy",
       category: "Wood Fencing",
-      location: "Grand Prairie, TX"
+      location: ""
     },
     {
       id: 8,
       image: "/07Rev-Euless Fence.jpg",
-      title: "Detailed Fence Work",
+      alt:   "wood fence featuring clean top trim and balanced structure",
+      title: "Gate installation with matching fence design",
       category: "Wood Fencing",
-      location: "HEB - Euless, TX"
+      location: ""
     },
     {
       id: 9,
       image: "/07Rev-6ft Mod S-B-S No Stain_Dallas.jpg",
-      title: "Fence Installation Project",
+      alt:   "sturdy and modern board-on-board cedar fence",
+      title: "Classic vertical fence for timeless curb appeal",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: ""
     },
     {
       id: 10,
       image: "/07Rev-8ft Mod S.B.S._Plano.jpg",
-      title: "Custom Fence Solution",
+      alt:   "cedar picket fence with clean lines with the option of weather protection",
+      title: "Modern cedar fence offering full backyard enclosure",
       category: "Wood Fencing",
-      location: "Plano, TX"
+      location: ""
     },
     {
       id: 11,
       image: "/07Rev-Cedar Fence_Cedar Hill.jpg",
-      title: "Expert Fence Construction",
+      alt:   "eight-foot fence with solid framing for added security",
+      title: "Handcrafted wood fence with durable post supports",
       category: "Wood Fencing",
-      location: "Cedar Hill, TX"
+      location: ""
     },
     {
       id: 12,
       image: "/07Rev-Decorative Fencing.jpg",
-      title: "Custom Wood Fence Installation",
+      alt:   "cedar picket fence with clean lines and weather protection",
+      title: "Expertly installed wood privacy fences",
       category: "Wood Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: ""
     },
     {
       id: 13,
       image: "/07Rev-Farmers Branch Fence.jpg",
-      title: "Modern Fence Installation",
+      alt:   "decorative wood fence with metal post, standard",
+      title: "Stained fence project designed for long-term protection",
       category: "Wood Fencing",
-      location: "Farmers Branch, TX"
+      location: ""
     },
     {
       id: 14,
       image: "/07Rev-Flower Mound Fence.jpg",
-      title: "Professional Fence Project",
+      alt:   "modern cedar fence highlighting fine wood grain detail",
+      title: "Looking for a custom fence to secure your yard and property?",
       category: "Wood Fencing",
-      location: "Flower Mound, TX"
+      location: ""
     },
     {
       id: 15,
       image: "/07Rev-Ft Worth Fence.jpg",
-      title: "Quality Fence Installation",
+      alt:   "wood fence installation with precision and consistent height",
+      title: "Residential fencing upgrade using premium cedar boards",
       category: "Wood Fencing",
-      location: "Fort Worth, TX"
+      location: ""
     },
     {
       id: 16,
       image: "/07Rev-Garland Fence2.jpg",
-      title: "Custom Fence Design",
+      alt:   "privacy fence designed for durability and elegant appearance",
+      title: "Detailed board-on-board fence PLUS we offer Ready-Seal finishes",
       category: "Wood Fencing",
-      location: "Garland, TX"
+      location: ""
     },
     {
       id: 17,
       image: "/07Rev-Grand Prairie Fence2.jpg",
-      title: "Expert Fence Construction",
+      alt:   "premium cedar fence showcasing professional installation quality",
+      title: "Elegant privacy fence to make your neighborhood jealous",
       category: "Wood Fencing",
-      location: "Grand Prairie, TX"
+      location: ""
     },
     {
       id: 18,
       image: "/07Rev-Grapevine Fence.jpg",
-      title: "Residential Fence Installation",
+      alt:   "high-end wooden fence project with neat finishing touches",
+      title: "Durable wood fences with 1 walk thru gate included",
       category: "Wood Fencing",
-      location: "Grapevine, TX"
+      location: ""
     },
     {
       id: 19,
       image: "/07Rev-Grapevine Fence2.jpg",
-      title: "Professional Fence Work",
+      alt:   "residential fence installation emphasizing durability and design",
+      title: "Wood + metal fencing for a distinctive backyard look",
       category: "Wood Fencing",
-      location: "Grapevine, TX"
+      location: ""
     },
     {
       id: 20,
       image: "/07Rev-Hurst Fence.jpg",
-      title: "Quality Fence Project",
+      alt:   "cedar fence with reinforced corners and even panel flow",
+      title: "All our fences are crafted for lasting performance",
       category: "Wood Fencing",
-      location: "Hurst, TX"
+      location: ""
     },
     {
       id: 21,
       image: "/07Rev-Las Colinas Fence.jpg",
-      title: "Custom Fence Installation",
+      alt:   "smooth-stained fence built for both privacy and curb appeal",
+      title: "Smooth-finish fence built for durability and beauty",
       category: "Wood Fencing",
-      location: "Irving-Las Colinas, TX"
+      location: ""
     },
     {
       id: 22,
       image: "/07Rev-Lewisville Fence.jpg",
-      title: "Expert Fence Design",
+      alt:   "custom wood fence designed for visual appeal and security",
+      title: "Cedar fence installation featuring precision alignment",
       category: "Wood Fencing",
-      location: "Lewisville, TX"
+      location: ""
     },
     {
       id: 23,
       image: "/07Rev-Mansfield Fence.jpg",
-      title: "Professional Fence Solution",
+      alt:   "professional-grade wood fence with tight panel alignment",
+      title: "Cedar wood fences to make your backyard stand out",
       category: "Wood Fencing",
-      location: "Mansfield, TX"
+      location: ""
     },
     {
       id: 24,
       image: "/07Rev-Flower Mound Fence.jpg",
-      title: "Quality Fence Construction",
+      alt:   "strong and attractive cedar fence installation for homeowners",
+      title: "Upgraded residential fence with enhanced curb appeal",
       category: "Wood Fencing",
-      location: "Flower Mound, TX"
+      location: ""
     },
     {
       id: 25,
       image: "/07Rev-6ft Mod S-B-S No Stain_Dallas.jpg",
-      title: "6ft Side-by-Side Cedar Fence",
+      alt:   "decorative wooden fence highlighting attention to detail",
+      title: "High-quality privacy fencing with modern design lines",
       category: "Wood Fencing",
-      location: "Dallas, TX"
+      location: ""
     },
     {
       id: 26,
       image: "/07Rev-Decorative Fencing.jpg",
-      title: "Decorative Fence Design",
+      alt:   "modern cedar fence built with premium craftsmanship",
+      title: "Precision fence construction for security and style",
       category: "Decorative Fencing",
-      location: "Dallas-Fort Worth, TX"
+      location: ""
     },
     {
       id: 27,
       image: "/07Rev-Grapevine Fence.jpg",
-      title: "Awesome Cedar Fence",
+      alt:   "durable privacy fence made with high-quality cedar materials",
+      title: "Expertly built cedar fence with attention to detail",
       category: "Ornamental Steel Fencing",
-      location: "Grapevine, TX"
+      location: ""
     },
     {
       id: 28,
       image: "/07Rev-Privacy Fencing_Hurst.jpg",
-      title: "Privacy Fence Installation",
+      alt:   "board-on-board fence designed for privacy and long-term use",
+      title: "Full property enclosure combining privacy, strength and beauty",
       category: "Privacy Fencing",
-      location: "HEB-Hurst, TX"
+      location: ""
     },
     {
       id: 29,
       image: "/07Rev-Wood Fencing_Irving.jpg",
-      title: "Wood Fence Installation",
+      alt:   "custom cedar fence project built with expert craftsmanship",
+      title: "Custom-designed wood fences for beauty and durability",
       category: "Wood Fencing",
-      location: "Irving, TX"
+      location: ""
     }
   ];
 
@@ -258,7 +287,7 @@ const Gallery = () => {
       <GalleryImage
         name={toBase(project.image)}   // turns "/file.jpg" into "file"
         eager={index < 4}              // first row loads fast
-        alt={project.title}
+        alt={project.alt}
         w={1200}
         h={800}
       />
@@ -309,7 +338,7 @@ const Gallery = () => {
     `${webp(toBase(projects[selectedImage].image), 1600)} 1600w`,
   ].join(", ")}
   sizes="100vw"
-  alt={projects[selectedImage].title}
+  alt={projects[selectedImage].alt}
   className="max-w-full max-h-full object-contain"
               />
               
