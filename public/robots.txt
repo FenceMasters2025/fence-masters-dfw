@@ -1,0 +1,49 @@
+# ----------------------------------------
+# Robots.txt for Fence Masters DFW
+# Created: December 2025
+# Purpose: Control crawler access and boost SEO/AI visibility
+# ----------------------------------------
+
+User-agent: *
+Allow: /
+
+# Disallow unnecessary or private areas
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /test/
+Disallow: /thank-you/
+
+# ----------------------------------------
+# Sitemap location
+# ----------------------------------------
+Sitemap: https://fencemastersdfw.com/sitemap.xml
+
+# ----------------------------------------
+# AI & Search-Assistant Bots
+# These bots power AI search experiences (e.g., ChatGPT, Bing Copilot, Google SGE)
+# ----------------------------------------
+
+# Allow OpenAI’s GPTBot to index your public content
+User-agent: GPTBot
+Allow: /
+
+# Allow Google-Extended (used for AI summaries)
+User-agent: Google-Extended
+Allow: /
+
+# Allow BingAI / Microsoft Copilot crawlers
+User-agent: Bingbot
+Allow: /
+
+# Block common spam or malicious bots (optional)
+User-agent: MJ12bot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SEMrushBot
+Disallow: /
+
+# ----------------------------------------
+# End of file
+# ----------------------------------------
