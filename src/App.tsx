@@ -26,7 +26,7 @@ function App() {
             <Route path="/gallery" element={<PageShell><GalleryPage /></PageShell>} />
             <Route path="/contact" element={<PageShell><ContactPage /></PageShell>} />
             <Route path="/ballpark-estimate" element={<PageShell><EstimatePage /></PageShell>} />
-            <Routepath="/privacy-policy" element={<PageShell><PrivacyPolicy /></PageShell>} />
+            <Route path="/privacy-policy" element={<PageShell><PrivacyPolicy /></PageShell>} />
           </Routes>
         </main>
 
