@@ -28,7 +28,7 @@ function App() {
             <Route path="/contact" element={<PageShell><ContactPage /></PageShell>} />
             <Route path="/ballpark-estimate" element={<PageShell><EstimatePage /></PageShell>} />
             <Route path="/privacy-policy" element={<PageShell><PrivacyPolicy /></PageShell>} />
-            <Route path="/terms-of-service" element={<PageShell><TermsOfService /></PageShell />
+            <Route path="/terms-of-service" element={<PageShell><TermsOfService /></PageShell>} />
           </Routes>
         </main>
 
