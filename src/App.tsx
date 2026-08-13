@@ -9,6 +9,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import EstimatePage from "./pages/BallparkEstimatePage";
 import PageShell from "./components/PageShell";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/gallery" element={<PageShell><GalleryPage /></PageShell>} />
             <Route path="/contact" element={<PageShell><ContactPage /></PageShell>} />
             <Route path="/ballpark-estimate" element={<PageShell><EstimatePage /></PageShell>} />
+            <Routepath="/privacy-policy" element={<PageShell><PrivacyPolicy /></PageShell>} />
           </Routes>
         </main>
 
