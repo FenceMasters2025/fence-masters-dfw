@@ -325,6 +325,11 @@ const TermsOfService = () => {
               accordance with applicable laws, carrier requirements, and
               industry standards. Customers should only receive SMS messages
               when the appropriate consent has been obtained.
+
+              You must be at least 18 years of age to use Fence Masters DFW's
+              website, request services, schedule an appointment, or participate
+              in our SMS messaging program. By using our services or opting in to
+              receive text messages, you confirm that you are at least 18 years old.
             </p>
           </section>
 
