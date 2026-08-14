@@ -378,7 +378,7 @@ const TermsOfService = () => {
             </p>
 
             <p className="mt-4">
-              Fence Masters DFW is an assumed business name operated by J. Espino.
+              Fence Masters DFW is an assumed business name operated by Josue Espino.
             </p>
           </section>
         </div>
